@@ -63,6 +63,7 @@ and prose discipline that apply everywhere). Then load the section-specific refe
 | Literature review / related work / positioning against prior work | `references/literature-review.md` |
 | Model, formulation, problem statement, assumptions, notation | `references/model-formulation.md` |
 | **Optimization papers specifically** — the problem definition, the model section's build order, assumption prose, naming the formulation, the narrative spine | `references/optimization-problem-definition.md` |
+| Annotated specimens for the above — problem definitions by pattern, model openings, assumption moves, obstacle and key-idea sentences | `references/optimization-examples.md` |
 | Solution method, algorithm, theorems/proofs, structural analysis | `references/solution-method.md` |
 | Numerical experiments, computational study, case study, managerial insights | `references/numerical-experiments.md` |
 | Citations, cross-references, checking intro↔body / model↔solution coherence | `references/citations-and-coherence.md` |

@@ -8,6 +8,11 @@ optimization papers with a recoverable model or problem-statement section**.
 This is a writing file: the order sentences come in, the verbs, the assumption prose, the naming
 conventions. For *what the model should be*, see the `orms-model-design` skill.
 
+**`optimization-examples.md` is the companion specimen file** — eight annotated problem definitions
+covering the recurring patterns, four annotated model-section openings, assumption specimens by
+move, obstacle sentences, two ways to open a solution section, and "key idea" sentences. Read it
+alongside this one; the patterns here are easier to apply once you have seen them filled in.
+
 ---
 
 ## 1. The problem definition — measured shape
@@ -63,7 +68,8 @@ objective*, in that order, in about 64 words. Everything else is earned.
 
 Slots 1 and 3 often merge into a single sentence, which is why both sit at position 0.00.
 
-**Worked fills, from published M&SOM problem definitions:**
+**Worked fills, from published M&SOM problem definitions** (more, annotated by pattern, in
+`optimization-examples.md` §1):
 
 > **[1]** "Mobile outreach teams of healthcare workers visit a fixed set of remote sites to provide
 > healthcare services. **[2]** Because of dynamics in demand and supply, once-rational site-to-team
