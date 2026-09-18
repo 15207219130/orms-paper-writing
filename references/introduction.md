@@ -9,7 +9,31 @@ getting them to correspond is the whole point.
 
 Read this together with `citations-and-coherence.md` (the contribution↔section mapping lives there)
 and `journal-profiles.md` (MS wants the managerial "so what" foregrounded; OR tolerates a
-result-first, more technical framing).
+result-first, more technical framing). `journal-benchmarks.md` carries the measured length and
+structure budgets; `phrase-bank.md` carries the sentence-level frames for each move below, with
+how often each actually appears in print.
+
+---
+
+## Measured budget (OR / MS / M&SOM, 2,322 papers)
+
+| | **OR** | **MS** | **M&SOM** |
+|---|---|---|---|
+| Abstract words | 185 | 211 | 285 (structured) |
+| Introduction words | ~2,000 | ~1,630 | ~1,510 |
+| Introduction paragraphs | 7 | 5 | 5 |
+| First-paragraph words | 157 | 158 | **127** |
+| Numbered `1.x` subsections | **2** | 0 | 0 |
+| Conclusion words | ~1,290 | ~1,360 | ~1,310 |
+
+**The introduction is ~10–11% of the paper in all three journals.** A 16,000-word MS paper gets a
+1,600–1,800-word introduction. Longer than that usually means the paper has not yet decided what
+its contribution is.
+
+**MS and M&SOM introductions are continuous prose.** The median number of `1.x` subsections in
+both is zero. Do not add `1.1 Motivation / 1.2 Contributions / 1.3 Organization` to an MS or
+M&SOM draft by default — the majority of published papers do not have them. OR is the exception
+and is genuinely structured (median 2, typically `Literature Review` and `Contributions`).
 
 ---
 
@@ -46,7 +70,13 @@ Randomized Rounding." A named object gives the reader a handle and signals a con
 **Structured abstracts.** *Transportation Science* / M&SOM and some INFORMS journals use bold
 labels — **Problem definition / Methodology and results / Managerial implications**. When the target
 journal uses these (check `journal-profiles.md`), adopt them, and make the *Implications* sentence
-genuinely managerial:
+genuinely managerial.
+
+For M&SOM this is not optional: measured across 778 papers, `Managerial implications:` appears in
+**82%**, `Problem definition:` in 46%. Both the four-part form and the compressed three-part form
+(`Problem definition / Methodology-results / Managerial implications`) are current. Conversely, OR
+and MS abstracts are **unstructured single paragraphs** (185 and 211 words) — importing M&SOM
+labels into them is a visible mis-targeting signal.
 
 > "**Implications:** … the proposed partially flexible delivery system demonstrates significant
 > potential to improve operational efficiencies while reducing the … hassle of operating a fully
@@ -123,6 +153,15 @@ this disarms the reviewer and sharpens what is actually new.
 
 ### Stating contributions
 
+**Prose is the majority format.** Only **13% (OR, MS) to 17% (M&SOM)** of published papers use an
+explicitly enumerated contribution list. Enumerate when the contributions are genuinely separable
+(a formulation, a theorem, an algorithm, an experiment); use prose when there is one idea with
+consequences. Do not reach for a numbered list by reflex.
+
+When you do enumerate, the items should **descend a ladder** — object introduced → theoretical
+guarantee → computational or empirical evidence → managerial consequence — rather than repeat four
+claims of the same kind.
+
 Format varies with venue maturity; all are acceptable, so match the target journal and the user's
 preference:
 
@@ -131,7 +170,10 @@ preference:
   ("Does the profit function possess … structural properties? How can a retailer efficiently
   optimize …? … These are some of the questions we address.").
 - **Numbered list** (i)–(iv), each item ending in a sharp claim, often **"To the best of our
-  knowledge, we are the first to …"**.
+  knowledge, we are the first to …"**. Measured: the priority phrase appears in only 2–4% of
+  papers, and always with qualifiers that bound it. Write "the first to derive *closed-form*
+  optimal mechanisms *under distributional ambiguity*", never "the first to study X" — an
+  unbounded priority claim is the easiest thing in a paper for a referee to break.
 - **Bulleted list**, one bullet per contribution paragraph, each ending in a "first to" or a
   quantified claim ("can yield more than 4% improvement in profit for practical-size networks").
 - **Bold run-in headers**: a short subsection (e.g. "1.1 Key Results and Main Contributions") with
@@ -144,17 +186,23 @@ right in the introduction**, immediately followed by a pointer to where it is pr
 Theorem 1 in §3") and a one-line plain-language restatement ("An alternative way to state Theorem 1
 is that our algorithm has a competitive ratio of 1 − O(√(m log n)/B)").
 
-### Roadmap
+### Roadmap — optional, and a minority practice
 
-Close the introduction with a **section-numbered roadmap**: "The remainder of the paper is organized
-as follows. Section 2 reviews … Section 3 introduces … Section 6 concludes." In methodology-heavy
-papers the roadmap can double as the contribution list (each section pointer states what is proved
-there). Many corpus papers fold notation conventions into this same paragraph ("All proofs are
-relegated to the appendix. We use boldface lowercase letters for vectors …").
+"The remainder of this paper is organized as follows" appears in only **21% (MS) to 27% (OR)** of
+published papers. Roughly three quarters omit it. Treat it as a device, not a required closing
+move: include it when the structure is genuinely non-obvious (analysis split across two asymptotic
+regimes; theory and experiments interleaved), and otherwise give those words to the contribution.
 
-**Length:** introductions run ~6–12 paragraphs. Application papers run longer (they spend more on the
-hook and the data motivation); terse theory papers can be shorter but still always include the
-hinge, contributions, and roadmap.
+When you do include one, keep the classic form — "Section 2 reviews … Section 3 introduces …
+Section 6 concludes." In methodology-heavy papers the roadmap can double as the contribution list
+(each section pointer states what is proved there). Many corpus papers fold notation conventions
+into this same paragraph ("All proofs are relegated to the appendix. We use boldface lowercase
+letters for vectors …").
+
+**Length:** median introductions run 5 paragraphs in MS and M&SOM, 7 in OR — shorter than the
+6–12 that reads as natural when drafting. Application papers run longer (they spend more on the
+hook and the data motivation); terse theory papers can be shorter. The hinge and the contributions
+are non-negotiable; the roadmap is not.
 
 ---
 
@@ -174,6 +222,11 @@ broadening move.
   "partial flexibility … may introduce fairness concerns among couriers").
 - **Future work as an enumerated menu**, each item introduced "First / Second / Third …" — often the
   relaxations of assumptions made in the model, listed in the same order they were introduced.
+  `for future research` appears in 10% (OR), 19% (MS), 23% (M&SOM) of papers. **Every future-work
+  sentence must name the assumption being relaxed**, and ideally why it is hard: "this would
+  require different methods in analyzing the regret, especially the loss of nonstationarity."
+  "This is a promising direction for future research" occurs in the corpus and carries no
+  information — do not write it.
 - Theory papers sometimes organize the conclusion **by perspective** ("From a theoretical
   perspective … From a practical perspective …") and end on a crisp one-line takeaway.
 

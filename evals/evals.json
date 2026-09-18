@@ -6,67 +6,250 @@
       "id": 0,
       "eval_name": "model-formulation-charging-truck",
       "prompt": "I'm preparing a submission to Operations Research on mobile EV charging-truck dispatch. Attached are my rough model notes (messy, inconsistent notation, a couple of open modeling questions I left for you to resolve). Please write the Model / Formulation section as it would appear in the paper. Clean up and unify the notation, and make it read like a top journal.",
-      "files": ["C:\\Users\\xiong\\.claude\\skills\\orms-paper-writing\\evals\\inputs\\charging_truck_model_notes.md"],
+      "files": [
+        "C:\\Users\\xiong\\.claude\\skills\\orms-paper-writing\\evals\\inputs\\charging_truck_model_notes.md"
+      ],
       "expected_output": "A polished Model section: prose setup before any math; a notation-conventions statement; objects introduced in order (sets/primitives -> parameters -> decision variables -> objective -> constraints); the full formulation block followed by a constraint-by-constraint prose walkthrough; every assumption stated AND justified (including a resolved, stated choice on the depot-reload and truck-driving-energy open questions); unified internally-consistent notation; the problem named/labeled for later reference; flowing prose, present tense, we-active.",
       "assertions": [
-        {"text": "Opens with a verbal/prose description of the setting before any display equation", "type": "qualitative"},
-        {"text": "States notation conventions (index meanings, vector/scalar or time conventions) before or as it introduces the formulation", "type": "qualitative"},
-        {"text": "Introduces objects in the order sets/primitives -> parameters -> decision variables -> objective -> constraints", "type": "qualitative"},
-        {"text": "Walks through the constraints individually in prose after the formulation block (not just lists equations)", "type": "qualitative"},
-        {"text": "States each major modeling assumption AND justifies it, and explicitly resolves the user's two open questions (depot energy reload; truck driving-energy) by stating a chosen assumption", "type": "qualitative"},
-        {"text": "Produces a single internally-consistent notation scheme (fixes the user's inconsistencies; no symbol reused with two meanings)", "type": "qualitative"},
-        {"text": "Names or labels the optimization problem (e.g. a bracket tag) so later sections can refer back to it", "type": "qualitative"},
-        {"text": "Written as flowing prose in present tense and we-active voice, not a bare list of equations or bullet points", "type": "qualitative"}
+        {
+          "text": "Opens with a verbal/prose description of the setting before any display equation",
+          "type": "qualitative"
+        },
+        {
+          "text": "States notation conventions (index meanings, vector/scalar or time conventions) before or as it introduces the formulation",
+          "type": "qualitative"
+        },
+        {
+          "text": "Introduces objects in the order sets/primitives -> parameters -> decision variables -> objective -> constraints",
+          "type": "qualitative"
+        },
+        {
+          "text": "Walks through the constraints individually in prose after the formulation block (not just lists equations)",
+          "type": "qualitative"
+        },
+        {
+          "text": "States each major modeling assumption AND justifies it, and explicitly resolves the user's two open questions (depot energy reload; truck driving-energy) by stating a chosen assumption",
+          "type": "qualitative"
+        },
+        {
+          "text": "Produces a single internally-consistent notation scheme (fixes the user's inconsistencies; no symbol reused with two meanings)",
+          "type": "qualitative"
+        },
+        {
+          "text": "Names or labels the optimization problem (e.g. a bracket tag) so later sections can refer back to it",
+          "type": "qualitative"
+        },
+        {
+          "text": "Written as flowing prose in present tense and we-active voice, not a bare list of equations or bullet points",
+          "type": "qualitative"
+        }
       ]
     },
     {
       "id": 1,
       "eval_name": "introduction-quickcommerce-ms",
       "prompt": "Target journal: Management Science. Using the attached ingredients (topic, gap notes, three contributions, key results, hook material, and the planned section layout), draft the Introduction for the paper, including an explicit contributions paragraph and a section roadmap.",
-      "files": ["C:\\Users\\xiong\\.claude\\skills\\orms-paper-writing\\evals\\inputs\\quickcommerce_intro_ingredients.md"],
+      "files": [
+        "C:\\Users\\xiong\\.claude\\skills\\orms-paper-writing\\evals\\inputs\\quickcommerce_intro_ingredients.md"
+      ],
       "expected_output": "A Management-Science-style introduction: opens with a managerial/practical hook with real stakes; pivots via a gap -> 'in this paper we' hinge; an explicit contributions paragraph/list covering all three contributions; managerial framing; closes with a section-numbered roadmap matching the given layout (2 lit review, 3 model, 4 structure+algorithm, 5 estimation, 6 numerical, 7 conclusion). Does NOT invent a specific market-size statistic; instead flags the unverified number per the user's note.",
       "assertions": [
-        {"text": "Opens with a practical/managerial hook (real-world stakes), not a bare technical gap", "type": "qualitative"},
-        {"text": "Contains an explicit gap statement followed by an 'in this paper, we...' style contribution hinge", "type": "qualitative"},
-        {"text": "Includes an explicit contributions paragraph or list that covers all three of the user's contributions", "type": "qualitative"},
-        {"text": "Ends with a section-numbered roadmap consistent with the user's stated layout (sections 2-7)", "type": "qualitative"},
-        {"text": "Does NOT fabricate a specific market-size figure; flags the missing statistic as needing verification (or states it qualitatively) rather than inventing a number", "type": "qualitative"},
-        {"text": "Framing emphasizes managerial relevance appropriate to Management Science (not purely methodological)", "type": "qualitative"},
-        {"text": "Each claimed contribution corresponds to a section that will deliver it (coherence with the roadmap)", "type": "qualitative"},
-        {"text": "Flowing prose, present tense, we-active; not bullet-fragment writing (a numbered contributions list is acceptable)", "type": "qualitative"}
+        {
+          "text": "Opens with a practical/managerial hook (real-world stakes), not a bare technical gap",
+          "type": "qualitative"
+        },
+        {
+          "text": "Contains an explicit gap statement followed by an 'in this paper, we...' style contribution hinge",
+          "type": "qualitative"
+        },
+        {
+          "text": "Includes an explicit contributions paragraph or list that covers all three of the user's contributions",
+          "type": "qualitative"
+        },
+        {
+          "text": "Ends with a section-numbered roadmap consistent with the user's stated layout (sections 2-7)",
+          "type": "qualitative"
+        },
+        {
+          "text": "Does NOT fabricate a specific market-size figure; flags the missing statistic as needing verification (or states it qualitatively) rather than inventing a number",
+          "type": "qualitative"
+        },
+        {
+          "text": "Framing emphasizes managerial relevance appropriate to Management Science (not purely methodological)",
+          "type": "qualitative"
+        },
+        {
+          "text": "Each claimed contribution corresponds to a section that will deliver it (coherence with the roadmap)",
+          "type": "qualitative"
+        },
+        {
+          "text": "Flowing prose, present tense, we-active; not bullet-fragment writing (a numbered contributions list is acceptable)",
+          "type": "qualitative"
+        }
       ]
     },
     {
       "id": 2,
       "eval_name": "litreview-revise-drone-citations",
       "prompt": "Please revise the attached draft literature review for a truck-drone last-mile delivery paper so it reads like a top operations-research journal: better narrative logic, proper positioning of our contribution's gap, and fix the citations. I do not have a verified bibliography yet and some of these citations I only half-remember, so handle citation integrity carefully and flag anything that needs checking.",
-      "files": ["C:\\Users\\xiong\\.claude\\skills\\orms-paper-writing\\evals\\inputs\\draft_litreview_drone.md"],
+      "files": [
+        "C:\\Users\\xiong\\.claude\\skills\\orms-paper-writing\\evals\\inputs\\draft_litreview_drone.md"
+      ],
       "expected_output": "A revised literature review organized into named research streams announced up front, each ending with explicit positioning of the paper's gap; vague attributions removed or made specific; suspicious/unverifiable citations flagged rather than asserted as fact (especially 'Zhang and Patel (2019) ... exactly 41% in all settings' and 'Muller et al. (2020)'); no newly fabricated citations; the false novelty claim ('first to ever study truck-drone routing', contradicted by Murray & Chu) corrected; and a citation-status report (verified / needs-check / unsupported) returned to the user.",
       "assertions": [
-        {"text": "Reorganizes the review into named research streams that are announced in an opening sentence", "type": "qualitative"},
-        {"text": "Each stream ends with explicit positioning of the paper's gap (prior work does A, we do B)", "type": "qualitative"},
-        {"text": "Flags the suspicious/unverifiable citations rather than keeping them as fact (e.g. the 'exactly 41% in all settings' Zhang & Patel claim and the Muller et al. branch-and-cut claim)", "type": "qualitative"},
-        {"text": "Removes or repairs vague attributions such as 'many studies have shown' and 'it is widely believed' (replaces with specific, checkable statements or flags them)", "type": "qualitative"},
-        {"text": "Does NOT fabricate new specific citations to fill gaps; uses placeholders / a verification list instead", "type": "qualitative"},
-        {"text": "Corrects the false 'first to ever study truck-drone routing' overclaim given Murray & Chu's prior flying-sidekick work", "type": "qualitative"},
-        {"text": "Returns an explicit citation-status checklist (verified vs needs-check vs unsupported) to the user", "type": "qualitative"}
+        {
+          "text": "Reorganizes the review into named research streams that are announced in an opening sentence",
+          "type": "qualitative"
+        },
+        {
+          "text": "Each stream ends with explicit positioning of the paper's gap (prior work does A, we do B)",
+          "type": "qualitative"
+        },
+        {
+          "text": "Flags the suspicious/unverifiable citations rather than keeping them as fact (e.g. the 'exactly 41% in all settings' Zhang & Patel claim and the Muller et al. branch-and-cut claim)",
+          "type": "qualitative"
+        },
+        {
+          "text": "Removes or repairs vague attributions such as 'many studies have shown' and 'it is widely believed' (replaces with specific, checkable statements or flags them)",
+          "type": "qualitative"
+        },
+        {
+          "text": "Does NOT fabricate new specific citations to fill gaps; uses placeholders / a verification list instead",
+          "type": "qualitative"
+        },
+        {
+          "text": "Corrects the false 'first to ever study truck-drone routing' overclaim given Murray & Chu's prior flying-sidekick work",
+          "type": "qualitative"
+        },
+        {
+          "text": "Returns an explicit citation-status checklist (verified vs needs-check vs unsupported) to the user",
+          "type": "qualitative"
+        }
       ]
     },
     {
       "id": 3,
       "eval_name": "numerical-experiments-charging-truck",
       "prompt": "I'm writing the Numerical Experiments / Computational Study section for an Operations Research submission on mobile EV charging-truck dispatch (branch-and-price on a team-orienteering-with-time-windows + energy-capacity model). Using the attached setup notes and raw results, write the section. Be honest about the deterministic model's limits.",
-      "files": ["C:\\Users\\xiong\\.claude\\skills\\orms-paper-writing\\evals\\inputs\\charging_truck_experiment_setup.md"],
+      "files": [
+        "C:\\Users\\xiong\\.claude\\skills\\orms-paper-writing\\evals\\inputs\\charging_truck_experiment_setup.md"
+      ],
       "expected_output": "An OR computational-study section: opens with purpose/research questions; describes instances, parameters, and benchmarks with provenance and reproducibility (Gurobi version, hardware, online companion); frames benchmarks as fair and states epistemic limits; introduces and interprets each result with quantified takeaways (B&P vs MILP-direct runtimes/gaps; vs greedy and zone-based; real-data case; fleet-size diminishing returns); ties results back to the algorithm; gives managerial takeaways (when the service is most valuable; energy-buffer tip); reports the energy-uncertainty robustness/negative result honestly without overselling.",
       "assertions": [
-        {"text": "Opens by stating the purpose / research questions of the computational study", "type": "qualitative"},
-        {"text": "Describes instances, parameters, and benchmarks with provenance and reproducibility (solver version, hardware, online companion / code availability)", "type": "qualitative"},
-        {"text": "Frames the baselines as fair operator heuristics (not straw men) and acknowledges what the experiments can/cannot establish", "type": "qualitative"},
-        {"text": "Introduces and interprets each table/result with quantified takeaways rather than dumping numbers (locate -> read -> interpret)", "type": "qualitative"},
-        {"text": "Ties observed performance back to the algorithm/model, and includes the fleet-size diminishing-returns observation", "type": "qualitative"},
-        {"text": "Reports the energy-uncertainty robustness result honestly as a limitation/sensitivity (the ~11% infeasible routes, energy-buffer fix) without overselling the deterministic model", "type": "qualitative"},
-        {"text": "Delivers managerial takeaways (when mobile charging is most valuable; the energy-buffer practical tip)", "type": "qualitative"},
-        {"text": "Flowing prose; past tense for what was done and present tense for what exhibits show", "type": "qualitative"}
+        {
+          "text": "Opens by stating the purpose / research questions of the computational study",
+          "type": "qualitative"
+        },
+        {
+          "text": "Describes instances, parameters, and benchmarks with provenance and reproducibility (solver version, hardware, online companion / code availability)",
+          "type": "qualitative"
+        },
+        {
+          "text": "Frames the baselines as fair operator heuristics (not straw men) and acknowledges what the experiments can/cannot establish",
+          "type": "qualitative"
+        },
+        {
+          "text": "Introduces and interprets each table/result with quantified takeaways rather than dumping numbers (locate -> read -> interpret)",
+          "type": "qualitative"
+        },
+        {
+          "text": "Ties observed performance back to the algorithm/model, and includes the fleet-size diminishing-returns observation",
+          "type": "qualitative"
+        },
+        {
+          "text": "Reports the energy-uncertainty robustness result honestly as a limitation/sensitivity (the ~11% infeasible routes, energy-buffer fix) without overselling the deterministic model",
+          "type": "qualitative"
+        },
+        {
+          "text": "Delivers managerial takeaways (when mobile charging is most valuable; the energy-buffer practical tip)",
+          "type": "qualitative"
+        },
+        {
+          "text": "Flowing prose; past tense for what was done and present tense for what exhibits show",
+          "type": "qualitative"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "eval_name": "journal-fit-and-norms-check",
+      "prompt": "I have a finished draft on green-resilience joint investment in a supply chain: a two-player evolutionary game with a risk-sharing contract, 7 propositions, a numerical section with parameter sweeps, and a short calibrated example using public emissions data. Main text is 23,000 words, the abstract is one 240-word paragraph, Section 2 is a 2,800-word literature review, and the introduction is 3,600 words with subsections 1.1 Motivation, 1.2 Contributions, 1.3 Organization. I was going to send it to M&SOM. Is that the right venue, and does the structure look right?",
+      "files": [],
+      "expected_output": "A venue recommendation with reasoning grounded in what the paper's contribution actually is, plus a concrete structural diagnosis against measured norms: 23,000 words is far outside the M&SOM range (median ~14.8k, IQR 13.4-16k) though within OR's; the introduction at ~16% of the paper exceeds the ~10-11% norm; the literature review at ~12% exceeds the 8-9% norm; M&SOM requires a structured abstract with a Managerial implications block, which the single 240-word paragraph lacks; 1.1/1.2/1.3 subsections are an OR habit (M&SOM median is 0). Should ask what the paper's punchline is / whether there is a managerial reversal, since that is what decides M&SOM vs OR, and should name the specific edits required for each option rather than only listing problems.",
+      "assertions": [
+        {
+          "text": "Diagnoses the 23,000-word length against the target journal's measured range and says which journal that length actually fits",
+          "type": "qualitative"
+        },
+        {
+          "text": "Flags that the introduction (~3,600w, ~16%) exceeds the ~10-11% norm and that the literature review exceeds the 8-9% norm",
+          "type": "qualitative"
+        },
+        {
+          "text": "Flags the missing M&SOM structured abstract, specifically the Managerial implications block",
+          "type": "qualitative"
+        },
+        {
+          "text": "Flags 1.1/1.2/1.3 introduction subsections as an OR convention rather than an M&SOM one",
+          "type": "qualitative"
+        },
+        {
+          "text": "Bases the venue recommendation on the nature of the contribution (theorem vs identification vs managerial decision), not only on topic area",
+          "type": "qualitative"
+        },
+        {
+          "text": "Asks about or probes for the managerial reversal / punchline, since that is the M&SOM discriminator",
+          "type": "qualitative"
+        },
+        {
+          "text": "Gives the concrete edit list for the recommended venue (what to cut, move, or add), not just a list of deviations",
+          "type": "qualitative"
+        },
+        {
+          "text": "Presents norms as distributions a submission is judged against rather than as hard rules, and does not invent journal word limits",
+          "type": "qualitative"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "eval_name": "msom-abstract-and-managerial-reversal",
+      "prompt": "Write the abstract for an M&SOM submission. Setting: a platform decides whether to subsidize EV charging for its gig-economy delivery drivers. We build a Stackelberg model, prove the optimal subsidy is non-monotone in the charging price, and show with a calibrated case study on a partner fleet's data that raising the subsidy can reduce total platform profit once driver entry responds. Also give me a one-line takeaway I can use in the conclusion.",
+      "files": [],
+      "expected_output": "A structured M&SOM abstract using the journal's labels (Problem definition / Academic-practical relevance / Methodology / Results / Managerial implications, or the compressed Problem definition / Methodology-results / Managerial implications form), roughly 250-300 words, with a genuine Managerial implications block. The non-monotonicity and the profit reversal should be foregrounded as the headline finding and stated WITH its scope condition (once driver entry responds), not as an unconditional claim. The takeaway line should name the action and the condition, and should not overclaim beyond what a Stackelberg model plus one calibrated case study supports.",
+      "assertions": [
+        {
+          "text": "Uses M&SOM structured-abstract labels rather than a single unstructured paragraph",
+          "type": "qualitative"
+        },
+        {
+          "text": "Includes a substantive Managerial implications block that could be read on its own",
+          "type": "qualitative"
+        },
+        {
+          "text": "Foregrounds the reversal (a higher subsidy can reduce profit) as the headline finding",
+          "type": "qualitative"
+        },
+        {
+          "text": "States the reversal with its scope condition (once driver entry responds) rather than as an unconditional claim",
+          "type": "qualitative"
+        },
+        {
+          "text": "Abstract length is in the vicinity of the ~285-word M&SOM norm, not a 150-word OR-style paragraph",
+          "type": "qualitative"
+        },
+        {
+          "text": "Does not overclaim causal or general-market conclusions from one calibrated case study; hedging matches the evidence",
+          "type": "qualitative"
+        },
+        {
+          "text": "Does not fabricate specific market statistics, fleet sizes, or dollar figures that the user did not supply",
+          "type": "qualitative"
+        },
+        {
+          "text": "The conclusion takeaway names both the recommended action and the condition under which it holds",
+          "type": "qualitative"
+        }
       ]
     }
   ]

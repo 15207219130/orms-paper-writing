@@ -24,13 +24,38 @@ This is **genre- and journal-dependent**, and both are correct — match the tar
 - **The body itself** (survey papers only) — organized as a taxonomy with a classification table and
   a critique paragraph per surveyed work.
 
-When unsure, a separate section is the safer default for a substantial modern submission; fold it in
-only if the paper is short or very theory-forward. Ask the user if it matters.
+### What published papers actually do
+
+Measured across 2,322 OR / MS / M&SOM articles — this is the sharpest structural difference
+between the three journals, and the default depends entirely on which one you are writing for:
+
+| | Standalone §2 | Subsection inside §1 | **No standalone section** |
+|---|---|---|---|
+| **Operations Research** | 29% | 35% | **70%** |
+| **Management Science** | 41% | 20% | 56% |
+| **M&SOM** | **61%** | 15% | 37% |
+
+- **Operations Research: folding in is the norm, not the fallback.** 70% of OR papers have no
+  standalone review section. Writing a 2,500-word §2 survey into an OR submission is one of the
+  most common mis-targeting errors — reviewers want the model early.
+- **M&SOM: a standalone §2 is the default** (61%), usually two or three named streams.
+- **Management Science: genuinely split.** Follow the norm of the sub-area you are submitting to;
+  if the user can name two or three recent MS papers in their exact area, check those.
+
+So: do **not** default to a separate section. Default to the target journal's norm, and ask the
+user if the journal is unsettled. Whichever placement you choose, the review stays small — it is
+the **smallest section in the paper at 8–9% of total words** (~1,200 words in a 15,000-word M&SOM
+paper, i.e. three streams at roughly 350–400 words each). It is a positioning device, not a survey.
+See `journal-benchmarks.md`.
+
+Length and placement aside, the *mechanics* below apply identically in both formats.
 
 ## Organize by research stream, and announce the streams
 
 The dominant structure is **two to four named streams**, announced in a single opening sentence, then
-taken in turn (often as numbered subsections):
+taken in turn (often as numbered subsections). This is measurable: `streams of literature` appears
+in 9% of M&SOM papers, `is related to` in 11%, and 4.5% of M&SOM papers write the phrase "three
+streams of" verbatim. The frame is conventional and expected — use it.
 
 > "We review three streams of related literature: region partitioning in logistics, stochastic and
 > dynamic vehicle routing, and on-time delivery operations." — *Carlsson et al.*

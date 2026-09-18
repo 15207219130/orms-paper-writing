@@ -7,6 +7,40 @@ takeaways tied back to theory and to managerial meaning** — and a conspicuous 
 that is, by reviewer standards, non-negotiable. A results section that dumps tables without
 interpretation, or that overclaims what the experiments establish, is a classic referee target.
 
+## Match the journal's evidence register
+
+Each journal's numerical section is making a *different kind of argument*. Measured across 2,322
+papers (these figures are lower bounds — see `../CORPUS-NOTES.md`):
+
+| Marker | **OR** | **MS** | **M&SOM** |
+|---|---|---|---|
+| Has a Numerical / Computational / Case section | 51% | 41% | 35% |
+| Has a Data section | 5% | 23% | 22% |
+| CPU / running / solution time discussed | **16%** | 3% | 3% |
+| Optimality gap reported | **11%** | 3% | 4% |
+| Benchmark or randomly generated instances | 12% | 6% | 3% |
+| Case study | 10% | 9% | **15%** |
+| Industry-partner / proprietary data | 2% | 5% | **7%** |
+| Counterfactual analysis | 1% | **8%** | 6% |
+| Robustness checks | 2% | **11%** | 7% |
+| "managerial insight / implication" | 3% | 14% | **79%** |
+
+- **OR — a performance argument.** Instances, optimality gaps, runtimes, benchmarks against known
+  methods. Reporting only "the effect is significant" leaves reviewers asking whether it scales.
+- **MS — an identification argument.** Data, robustness checks, counterfactuals. The burden is
+  showing the effect is real, not that the code is fast.
+- **M&SOM — a relevance argument.** Often a case study calibrated with a partner organization,
+  ending in what the manager should do.
+
+Writing OR-style gap-and-CPU-time tables into an M&SOM paper — or omitting them from an OR paper —
+is a common and avoidable mis-targeting error.
+
+**Exhibit budget:** the median is **5 figures and 4 tables** in all three journals, and **0%** of
+sampled papers carry a printed appendix as a main-text section. Roughly one exhibit per major
+claim; if a figure does not support a sentence in the abstract or conclusion, it belongs in the
+e-companion. MS and M&SOM papers most often open with a *motivating data figure* (a time series or
+cross-section of the real phenomenon); OR papers more often open with a *problem schematic*.
+
 ## Lead with purpose / research questions
 
 Open by stating *why these experiments exist* — what questions they answer — before any setup. Two
@@ -97,6 +131,30 @@ move it into the text and leave a one- or two-sentence caption.
 
 ## Tie results back to theory and to managerial meaning
 
+### The result → insight ladder
+
+A numerical result is not an insight. The corpus pattern has three rungs, and skipping either of
+the last two draws a predictable referee response:
+
+1. **The finding** — "We find that <effect>, especially when <condition>." (`we find that` appears
+   in 38% of both MS and M&SOM papers; it is the standard verb of result in both.)
+2. **The mechanism** — "This stems from a conflict between two opposing forces acting on
+   equilibrium strategies." Skip this and you get *"is this an artifact of your parameterization?"*
+3. **The decision consequence** — "Managers should <action> when <threshold condition>, rather than
+   <default>." Skip this and you get *"so what?"*
+
+**Quantify the payoff.** The strongest implication sentences carry a magnitude:
+
+> "…our policies can save more than 20% of overage and underage costs, relative to policies widely
+> used for perishable inventory replenishment and nurse staffing."
+
+> "Assuming a nominal commission for each successful delivery, our findings indicate the LMD firm
+> faces million-dollar annual losses due to productivity spillovers resulting from fake remarks."
+
+Template: `<policy change> yields <quantified improvement> relative to <the benchmark a
+practitioner uses today>, under <the conditions where it holds>.` "Our policy performs better" is
+not a result.
+
 Two backward links make the section land:
 
 - **To the theory:** attribute observed behavior to a specific proved term or result — "This aligns
@@ -140,6 +198,11 @@ where the result's credibility depends on them.
 
 ## Self-check
 
+- Does the evidence register match the target journal (OR: gaps + runtimes; MS: robustness +
+  counterfactual; M&SOM: calibrated case + managerial implications)?
+- Is the main text near ~5 figures / ~4 tables, with everything else in the e-companion?
+- Does every headline claim climb the full ladder — finding, mechanism, decision consequence —
+  and is it quantified against a benchmark a practitioner would actually use?
 - Does the section open with its purpose / research questions?
 - Are instances, parameters, and benchmarks given with provenance, and is reproducibility (solver,
   hardware, code) stated?
