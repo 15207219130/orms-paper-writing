@@ -212,6 +212,22 @@ The conclusion is a **stable template**: recap contributions (mirroring the abst
 practitioner-facing verdict → limitations → an enumerated menu of future work, often closing on a
 broadening move.
 
+**Measured** — share of conclusions containing each element (OR n=70, MS n=953, M&SOM n=607):
+
+| | **OR** | **MS** | **M&SOM** |
+|---|---|---|---|
+| Future work | 49% | 62% | **64%** |
+| States limitations | 26% | **56%** | 49% |
+| Practitioner-facing verdict | 21% | **55%** | **60%** |
+| Carries a number (%, $) | 23% | **51%** | 45% |
+| Enumerated menu ("First… Second…") | 13% | 24% | 25% |
+| Opens with a recap ("We study / we proposed…") | 30% | 19% | 23% |
+
+Read this as a journal signal: in MS and M&SOM a conclusion without a practitioner verdict
+(~57%) or without a quantified claim (~48%) is below the norm; in OR neither is expected, and
+the section is mostly recap plus future work. Note also that only about a fifth of conclusions
+*open* with the recap — most open on the phenomenon or the verdict and place the recap second.
+
 - **Recap + practitioner verdict.** Restate what was shown, then turn explicitly to the practical
   audience: "This result should be reassuring to the many users in the airline, hotel and
   broadcasting industries." Be honest in the verdict — when the result is mixed, say so: "our

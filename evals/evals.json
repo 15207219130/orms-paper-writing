@@ -251,6 +251,51 @@
           "type": "qualitative"
         }
       ]
+    },
+    {
+      "id": 6,
+      "eval_name": "diagnose-introduction-argument-order",
+      "prompt": "Here is my introduction draft for an M&SOM submission. Tell me what's wrong with it and rewrite the first two paragraphs.\n\n\"Green supply chain investment has attracted considerable attention in recent years. Many scholars have studied resilience investment. Smith (2019) studies supplier diversification. Lee and Zhang (2020) study inventory buffering. Kumar et al. (2021) study multi-sourcing under disruption. Wang (2022) adds a cost-sharing contract. However, none of these papers consider green investment and resilience investment simultaneously in an evolutionary game framework. Therefore, this paper studies the joint green-resilience investment problem between a supplier and a manufacturer. We build an evolutionary game model with a risk-sharing contract. The rest of this paper is organized as follows. Section 2 reviews the literature. Section 3 presents the model. Section 4 analyzes the equilibrium. Section 5 provides numerical experiments. Section 6 concludes.\"",
+      "files": [],
+      "expected_output": "A diagnosis in terms of argument ORDER, not just style: the gap arrives far too late and is derived from the literature rather than from the phenomenon (published M&SOM introductions place the first gap sentence at roughly 15-20% of the introduction, before the first literature-positioning sentence); the gap is a conjunction gap ('nobody combined A and B'), the weakest and most easily-dismissed form, and should be restated as a property gap; there is no sourced evidence in the opening (published first paragraphs are the most evidence-dense part of the introduction); there is no tension explaining why the joint problem is hard; the method sentence is left with no finding attached (METHOD->PREVIEW is the strongest adjacency in the corpus); the roadmap is doing work the contribution should do, and roadmaps appear in only about a quarter of published papers. The rewrite should open with sourced evidence about the phenomenon, close paragraph one on a gap derived from practice, add the tension, and attach a finding to the method sentence. Must not invent specific statistics or citations - should use clearly marked placeholders for figures the user has not supplied.",
+      "assertions": [
+        {
+          "text": "Diagnoses the problem as one of argument ORDER (gap too late, derived from literature rather than phenomenon), not merely wording or flow",
+          "type": "qualitative"
+        },
+        {
+          "text": "Identifies the 'nobody has combined A and B' gap as a conjunction gap and proposes a property-based gap instead",
+          "type": "qualitative"
+        },
+        {
+          "text": "Notes the absence of sourced evidence in the opening paragraph",
+          "type": "qualitative"
+        },
+        {
+          "text": "Notes that the method sentence has no finding attached to it, and fixes that in the rewrite",
+          "type": "qualitative"
+        },
+        {
+          "text": "Flags the roadmap as low-value here (a minority practice) rather than treating it as required",
+          "type": "qualitative"
+        },
+        {
+          "text": "Notes the missing tension / why the joint problem is hard",
+          "type": "qualitative"
+        },
+        {
+          "text": "The rewritten paragraphs open on the phenomenon with evidence and close paragraph one on a gap",
+          "type": "qualitative"
+        },
+        {
+          "text": "Does NOT fabricate specific statistics, dollar figures, or citations; uses clearly marked placeholders for anything the user did not supply",
+          "type": "qualitative"
+        },
+        {
+          "text": "Rewrite is flowing prose with no 1.1/1.2 subsection headers (M&SOM introductions are continuous prose)",
+          "type": "qualitative"
+        }
+      ]
     }
   ]
 }

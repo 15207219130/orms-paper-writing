@@ -10,8 +10,11 @@ logistics, assortment, inventory, location, and ML-for-optimization — with rea
 throughout. On top of that, `references/journal-benchmarks.md` and `references/phrase-bank.md`
 carry **measured** norms from full-text analysis of 2,322 articles in *Operations Research*,
 *Management Science* and *M&SOM* (~70% published 2022–2026): lengths, section architecture, word
-budgets, abstract formats, and how often each rhetorical move actually appears in print. See
-`CORPUS-NOTES.md` for the method and its limits.
+budgets, abstract formats, and how often each rhetorical move actually appears in print. The four
+`logic-*.md` references go further and reconstruct the **argument chain** of each section — the
+order the moves run in, the adjacency rules between them, and the measured practice around
+assumptions, benchmarks, result ladders and experiment design — each with a worked
+positive/negative contrast. See `CORPUS-NOTES.md` for the method and its limits.
 
 ## Contents
 
@@ -29,6 +32,10 @@ references/
   journal-benchmarks.md               # measured length / structure / abstract norms
   phrase-bank.md                      # rhetorical moves, with frequencies and exemplars
   style-mechanics.md                  # sentence-level mechanics
+  logic-introduction.md               # the argument chain of an introduction, and its order
+  logic-literature-review.md          # what a review proves; stream-internal logic
+  logic-methodology.md                # what a model/analysis section must establish, by paper type
+  logic-numerical-design.md           # designing experiments: the ladder, parameter credibility
 evals/
   evals.json                          # eval suite for the skill
   inputs/                             # sample inputs used by the evals

@@ -36,6 +36,15 @@ A separate IJAA collection (463 PDFs) was excluded — different field, differen
    papers containing the phrase at least once, not raw occurrence counts), restricted to
    sentences matching the rhetorical move being studied, and pruned so that a short phrase is
    dropped when a longer phrase containing it has ≥70% of its count.
+5. **Argument-chain analysis** (the four `logic-*.md` references): every sentence of every
+   introduction, literature-review section, model section and numerical section was tagged with
+   the rhetorical move it performs, using ordered keyword rules (first matching rule wins), and
+   each move's position recorded as a fraction of the section. Reported quantities are the
+   median position of a move's first occurrence, its density by decile/fifth, and
+   sentence-to-sentence transition probabilities between marked moves.
+6. **Methodological typing**: papers were classified as analytical/game, optimization/algorithm,
+   empirical/econometric or simulation by counting type-specific vocabulary across the whole
+   body; a paper with ≥8 hits in a category carries that label, and may carry two.
 
 ## Known limitations — read the numbers with these in mind
 
@@ -63,6 +72,27 @@ A separate IJAA collection (463 PDFs) was excluded — different field, differen
 - **Section-presence percentages** depend on heading detection: a paper whose numerical work
   lives inside "4. Analysis" is not counted as having a numerical section. Sums therefore
   under-count.
+- **Move tagging is keyword-based and single-label.** Each sentence gets the first matching
+  rule, so a sentence doing two jobs is counted once, and a move phrased without its usual
+  vocabulary is missed. About 75% of introduction sentences match no rule at all and are
+  counted as expository. Consequently the *levels* in the `logic-*.md` files are lower bounds
+  and should not be quoted as "X% of sentences are gap sentences" in any absolute sense; the
+  **ordering, shape and transition structure** are what the analysis supports.
+- **Paragraph structure could not be recovered reliably.** Two-column INFORMS PDFs interleave
+  columns and break paragraphs unpredictably under text extraction (a block-based PyMuPDF pass
+  was tried and was not reliable either). All argument-chain analysis is therefore at the
+  *sentence* level, positioned within the section, rather than paragraph-by-paragraph.
+- **"Assumption justified nearby" (~20%)** looks only at the two sentences following an
+  assumption sentence. Justification offered in a separate later discussion is not counted, so
+  the true rate of justified assumptions is higher than the figure reported.
+- **"Result followed by intuition" (~29%)** searches ~900 characters after a numbered result
+  statement for explanation cues. Cross-references to a result elsewhere in the paper can be
+  matched as statements, so this figure is noisy in both directions.
+- **Body text was truncated at 30,000 characters per section** in the pass used for the
+  methodology analysis, so counts over very long sections are slight under-estimates.
+- **Negative examples in the `logic-*.md` files are constructed**, not quoted. No published
+  paper in the corpus is held up as an example of bad writing; the contrast cases were written
+  to illustrate the failure mode the measurements describe.
 
 ## Regenerating or extending
 

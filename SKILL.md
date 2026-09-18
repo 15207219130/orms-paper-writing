@@ -68,6 +68,10 @@ and prose discipline that apply everywhere). Then load the section-specific refe
 | Which journal? MS vs OR vs Transportation Science vs M&SOM differences; converting between them | `references/journal-profiles.md` |
 | Length, section architecture, word budgets, abstract format — "is this draft within norms?" | `references/journal-benchmarks.md` |
 | Sentence-level frames for a specific move (hook, gap, RQ, contribution, positioning, insight, future work) | `references/phrase-bank.md` |
+| **Why an introduction is ordered the way it is**; the argument chain, and diagnosing a draft's order | `references/logic-introduction.md` |
+| **What a literature review is proving**; stream-internal logic, gap↔contribution mirror | `references/logic-literature-review.md` |
+| **What a model/analysis section must establish**; assumptions, benchmark, result ladder — by paper type (game / optimization / empirical / simulation) | `references/logic-methodology.md` |
+| **Designing** experiments (not just reporting them); the experiment ladder, parameter credibility | `references/logic-numerical-design.md` |
 
 If the user is writing a whole paper or asks about overall structure, skim all of them; the section
 references are short. The two cross-cutting references (`citations-and-coherence.md`,
@@ -87,6 +91,24 @@ Science is **not** in the corpus, so none of those numbers transfer to a TS subm
 Use the numbers as the distribution a submission is judged against, not as rules to cite in prose.
 But a draft sitting outside the interquartile range on length, or wearing another journal's abstract
 format, is making an avoidable first impression.
+
+**The four `logic-*.md` references go one level deeper**: not what published papers contain, but
+the *order their arguments run in* and why. Read the matching one whenever the job is structural —
+drafting a section from scratch, diagnosing a draft that "has everything but doesn't land", or
+deciding what an experiment section should contain. They carry the findings most likely to change
+a draft:
+
+- **The gap arrives before the literature.** First gap sentence at 15–19% of the introduction;
+  first literature-positioning sentence at 30–40%. Published papers assert the gap from the
+  phenomenon and recruit the literature to confirm it — not the reverse.
+- **The gap is not one beat.** GAP sentences run at 3–6% in *every* decile of the introduction.
+- **`METHOD → PREVIEW` is the strongest adjacency** (32–35%): never leave "we build a model of X"
+  as the last word; attach the finding.
+- **Numbered `Assumption k` blocks: median 0.** Assumptions are prose, 3–4 per paper, and only
+  ~20% are justified nearby — so justifying the load-bearing ones is a cheap edge.
+- **Analytical papers solve a benchmark first** (57% MS / 68% M&SOM, at ~0.2 of the body).
+- **Only ~29% of formal results get an intuition sentence nearby**, and only ~25% of experiment
+  sections show a case where the method loses. Both are cheap ways to be above the median.
 
 **Journal fit, in one screen:**
 
