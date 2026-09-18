@@ -27,6 +27,9 @@ references/
   model-formulation.md                # notation, assumptions, formulation conventions
   solution-method.md                  # algorithm sections, theory, proofs
   numerical-experiments.md            # computational study design and reporting
+  optimization-problem-definition.md  # house style for optimization papers: the problem
+                                      #   definition, model-section build order, assumption
+                                      #   prose, formulation naming, the narrative spine
   citations-and-coherence.md          # citation style, cross-section consistency
   journal-profiles.md                 # per-journal expectations; converting between venues
   journal-benchmarks.md               # measured length / structure / abstract norms

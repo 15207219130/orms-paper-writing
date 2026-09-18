@@ -110,4 +110,16 @@ Worth adding in a future pass:
   does not contain.
 - Per-sub-area breakdowns within MS, where the literature-review norm is likely bimodal.
 
+### Added pass: optimization problem statements
+
+`references/optimization-problem-definition.md` is built on two sub-corpora drawn from the 346
+papers typed as optimization/algorithmic: the **114 M&SOM papers carrying an explicit
+`Problem definition:` abstract label** (segmented by regular expression between that label and the
+next one), and the **213 optimization papers with a recoverable model or problem-statement
+section**. Element positions are the median, over papers, of the index of the first sentence
+matching that element's keyword rule, normalized by the number of sentences in the block. Verb
+counts are raw occurrences, not document frequencies. The same keyword caveats apply: an element
+phrased without its usual vocabulary is missed, so presence percentages are lower bounds while the
+*ordering* is the finding.
+
 Measured September 2026.

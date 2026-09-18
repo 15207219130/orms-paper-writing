@@ -62,6 +62,7 @@ and prose discipline that apply everywhere). Then load the section-specific refe
 | Abstract, introduction, contributions, conclusion, "the framing" | `references/introduction.md` |
 | Literature review / related work / positioning against prior work | `references/literature-review.md` |
 | Model, formulation, problem statement, assumptions, notation | `references/model-formulation.md` |
+| **Optimization papers specifically** — the problem definition, the model section's build order, assumption prose, naming the formulation, the narrative spine | `references/optimization-problem-definition.md` |
 | Solution method, algorithm, theorems/proofs, structural analysis | `references/solution-method.md` |
 | Numerical experiments, computational study, case study, managerial insights | `references/numerical-experiments.md` |
 | Citations, cross-references, checking intro↔body / model↔solution coherence | `references/citations-and-coherence.md` |
@@ -148,6 +149,10 @@ backed by the corpus:
 - **Never print an appendix in the main text** — 0% of sampled papers do.
 - **Every future-work sentence names the assumption being relaxed.** "This is a promising direction
   for future research" carries no information.
+- **In an optimization paper, the decision comes first and the objective comes last.** Measured over
+  114 M&SOM `Problem definition:` blocks: the decision sits at position 0.00 and the objective at
+  1.00. Drafts reliably invert this. Keep the method out (only 16% name one) and keep it to ~64
+  words. See `references/optimization-problem-definition.md`.
 - **Quantify every headline claim against a named baseline** — a percentage, a dollar figure, or a
   threshold condition.
 
